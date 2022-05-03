@@ -6,7 +6,6 @@ import Feed from './Feed/Feed';
 import Widgets from './Leftbar/Widgets';
 import Login from './Account/Login';
 import Logout from './Account/Logout';
-import Profile from './Profile/Profile';
 
 function App() {
   return (
@@ -17,7 +16,6 @@ function App() {
         <Route path="/Home" element={<Feed />} />
         <Route path="/Login" element={<Login />} />
         <Route path="/Logout" element={<Logout />} />
-        <Route path="/Profile" element={<Profile />} />
       </Routes>
       <Widgets/>
     </div>
