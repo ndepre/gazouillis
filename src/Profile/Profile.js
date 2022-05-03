@@ -1,7 +1,7 @@
 import { onAuthStateChanged, signOut } from "firebase/auth";
 import React from "react";
 import { useState } from "react";
-import { auth } from '../firebase';
+import { auth } from '.././firebase';
 import Login from '../Account/Login';
 import "./Profile.css";
 
