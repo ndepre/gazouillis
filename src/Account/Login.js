@@ -18,7 +18,7 @@ function Login(){
 
   const login = async () => {
     try {
-      const user = await signInWithEmailAndPassword(
+        const user = await signInWithEmailAndPassword(
         auth,
         loginEmail,
         loginPassword
@@ -29,34 +29,25 @@ function Login(){
     }
   };
 
-  const logout = async () => {
-    await signOut(auth);
-  };
-
   return (
-    <div className="sidebar">
-      <div>
-        <h3> Login </h3>
-        <input
+    <div className="feed">
+      <div className="connected">
+          <h3> Login </h3>
+          <input
           placeholder="Email..."
           onChange={(event) => {
             setLoginEmail(event.target.value);
           }}
-        />
-        <input
+        /> <br></br>
+        <input type="password"
           placeholder="Password..."
           onChange={(event) => {
             setLoginPassword(event.target.value);
           }}
-        />
+        /> <br></br>
 
         <button onClick={login}> Login</button>
       </div>
-
-      <h4> User Logged In: </h4>
-      {user?.email}
-
-      <button onClick={logout}> Sign Out </button>
     
     </div>
   );
