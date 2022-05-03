@@ -6,17 +6,24 @@ import {
 } from "react-twitter-embed";
 import SearchIcon from "@mui/icons-material/Search";
 import { Button } from '@mui/material';
+import { Link } from 'react-router-dom';
+
 
 function Widgets() {
   return (
+    
     <div className="widgets">
       <div className="loginContainer">
-        <Button type="submit"  className="button">
-          Login
-        </Button>
-        <Button type="submit" className="button">
-          Signup
-        </Button>
+        <Link to="/Login">
+          <Button type="submit"  className="button">
+            Login
+          </Button>
+        </Link>
+        <Link to="/Logout">
+          <Button type="submit" className="button">
+            Signup
+          </Button>
+        </Link>
       </div>
 
       <div className="widgets__input">

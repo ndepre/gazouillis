@@ -1,10 +1,11 @@
 import React from "react";
 import "./App.css";
-import Login from './Login';
 import {Route, Routes } from "react-router-dom";
 import Sidebar from './Sidebar/Sidebar';
 import Feed from './Feed/Feed';
 import Widgets from './Leftbar/Widgets';
+import Login from './Account/Login';
+import Logout from './Account/Logout';
 
 function App() {
   return (
@@ -12,8 +13,9 @@ function App() {
       <Sidebar />
       <Routes>
         <Route path="/" element={<Feed />} />
-        <Route path="/home" element={<Feed />} />
+        <Route path="/Home" element={<Feed />} />
         <Route path="/Login" element={<Login />} />
+        <Route path="/Logout" element={<Logout />} />
       </Routes>
       <Widgets/>
     </div>
