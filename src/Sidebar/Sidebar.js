@@ -19,7 +19,7 @@ function Sidebar() {
         <Link to="/Home"><SidebarOption Icon={HomeIcon} text="Home" /></Link>
         <Link to="/Notifications"><SidebarOption Icon={NotificationsNoneIcon} text="Notifications" /></Link>
         <Link to="/Messages"><SidebarOption Icon={MailOutlineIcon} text="Messages" /></Link>
-        <Link to="/Profile"><SidebarOption Icon={PermIdentityIcon} text="Profile" /></Link>
+        <Link to="/Login"><SidebarOption Icon={PermIdentityIcon} text="Profile" /></Link>
 
         <Button variant="outlined" className="sidebar__tweet" fullWidth>
           Tweet
