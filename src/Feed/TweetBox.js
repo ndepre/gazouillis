@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import "./TweetBox.css";
-import { db } from "./firebase";
 import { Button, Avatar } from '@mui/material';
 import { addDoc } from 'firebase/firestore';
 import { collection } from 'firebase/firestore';
+import { db } from "../firebase";
 
 function TweetBox() {
   const [tweetMessage, setTweetMessage] = useState("");
@@ -21,7 +21,8 @@ function TweetBox() {
     });
     setTweetMessage("");
     setTweetImage("");
-  };
+    
+    };
 
   return (
     <div className="tweetBox">

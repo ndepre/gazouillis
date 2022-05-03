@@ -2,6 +2,19 @@
   flex: 0.3;
 }
 
+.button {
+  background-color: var(--twitter-color) !important;
+  border: none !important;
+  color: white !important;
+  font-weight: 900 !important;
+  text-transform: inherit !important;
+  border-radius: 30px !important;
+  width: 80px;
+  height: 40px !important;
+  margin-left: 10px !important;
+  align-items: center !important;
+}
+
 .widgets__input {
   display: flex;
   align-items: center;
@@ -22,6 +35,14 @@
 }
 
 .widgets__widgetContainer {
+  margin-top: 15px;
+  margin-left: 20px;
+  padding: 20px;
+  background-color: #f5f8fa;
+  border-radius: 20px;
+}
+
+.loginContainer {
   margin-top: 15px;
   margin-left: 20px;
   padding: 20px;

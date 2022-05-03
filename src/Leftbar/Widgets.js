@@ -5,10 +5,20 @@ import {
   TwitterTweetEmbed,
 } from "react-twitter-embed";
 import SearchIcon from "@mui/icons-material/Search";
+import { Button } from '@mui/material';
 
 function Widgets() {
   return (
     <div className="widgets">
+      <div className="loginContainer">
+        <Button type="submit"  className="button">
+          Login
+        </Button>
+        <Button type="submit" className="button">
+          Signup
+        </Button>
+      </div>
+
       <div className="widgets__input">
         <SearchIcon className="widgets__searchIcon" />
         <input placeholder="Search Twitter" type="text" />
