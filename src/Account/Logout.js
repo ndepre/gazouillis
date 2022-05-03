@@ -2,7 +2,7 @@ import { createUserWithEmailAndPassword, onAuthStateChanged } from "firebase/aut
 import React, { useState } from "react";
 import { auth } from './../firebase';
 
-function Login(){
+function Logout(){
     const [registerEmail, setRegisterEmail] = useState("");
     const [registerPassword, setRegisterPassword] = useState("");
 
@@ -26,20 +26,20 @@ function Login(){
   };
 
   return (
-    <div className="sidebar">
+    <div className="feed connected">
         <h3> Register User </h3>
         <input
           placeholder="Email..."
           onChange={(event) => {
             setRegisterEmail(event.target.value);
           }}
-        />
-        <input
+        /> <br></br>
+        <input type="password"
           placeholder="Password..."
           onChange={(event) => {
             setRegisterPassword(event.target.value);
           }}
-        />
+        /> <br></br>
 
         <button onClick={register}> Create User</button>
     
@@ -47,4 +47,4 @@ function Login(){
   );
 }
 
-export default Login;
+export default Logout;
