@@ -2,7 +2,9 @@
   display: flex;
   align-items: center;
   cursor: pointer;
+  text-decoration: underline;
 }
+
 
 .sidebarOption:hover {
   background-color: #e8f5fe;
@@ -10,6 +12,7 @@
   color: var(--twitter-color);
   transition: color 100ms ease-out;
 }
+
 
 .sidebarOption > .MuiSvgIcon-root {
   padding: 20px;
