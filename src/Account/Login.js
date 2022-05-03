@@ -29,6 +29,7 @@ function Login(){
     }
   };
 
+
   return (
     <div className="feed">
       <div className="connected">
@@ -38,6 +39,7 @@ function Login(){
           onChange={(event) => {
             setLoginEmail(event.target.value);
           }}
+
         /> <br></br>
         <input type="password"
           placeholder="Password..."
@@ -45,9 +47,9 @@ function Login(){
             setLoginPassword(event.target.value);
           }}
         /> <br></br>
-
         <button onClick={login}> Login</button>
       </div>
+
     
     </div>
   );
